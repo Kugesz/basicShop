@@ -3,10 +3,10 @@ import root from "../util/rootpath.js";
 import path from "path";
 import { products } from "./admin.js";
 
+import * as productController from "../controllers/products.js";
+
 const router = express.Router();
 
-router.get("/", (req, res, next) => {
-  res.render("shop.ejs", { pageTitle: "Shop" });
-});
+router.get("/", productController.getAllProducts);
 
 export default router;
