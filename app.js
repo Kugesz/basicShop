@@ -1,5 +1,5 @@
 import express from "express";
-import { adminRoutes } from "./routes/admin.js";
+import adminRoutes from "./routes/admin.js";
 import shopRoutes from "./routes/shop.js";
 import bodyParser from "body-parser";
 import __dirname from "./util/rootpath.js";

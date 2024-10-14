@@ -5,10 +5,9 @@ import path from "path";
 import * as productControllers from "../controllers/products.js";
 
 const router = express.Router();
-const products = [];
 
 router.get("/add-product", productControllers.getAddProduct);
 
 router.post("/add-product", productControllers.postAddProduct);
 
-export { router as adminRoutes, products };
+export default router;
